@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* A11y minimum font size */
+    font-size: 12px;
+    font-family: Tahoma, Arial;
+}
+
+#masthead-skip {
+    position: absolute;
+    top: -100px;
+    font-size: 1.6em;
+    background-color: white;
+    color: black;
+    padding: 0.4em;
+    text-decoration: none;
+    border: black;
+    border-radius: 1em;
+    border-width: 0.15em;
+    border-style: solid;
+}
+
+#masthead-skip:focus {
+    top: auto;
+}
+
+nav.menu {
+    width: 100%;
+    background-color: #4d5791;
+    height: 44px;
+    padding: 0 40px;
+}
+
+nav.menu ul,
+nav.menu ul li {
+    margin: 0;
+    padding: 0 ;
+    list-style: none;
+    display: inline-block;
+}
+
+nav.menu ul li a {
+    display: block;
+    padding: 0 20px;
+    line-height: 44px;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+}
+
+nav.menu ul li a:hover  {
+    background-color: white;
+    color: #4d5791;
+}
+
+section.hero {
+    height: 350px;
+    background-color: #b4c6f0;
+    background-image: url('./bg.png');
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-top: 40px;
+}
+
+section.hero h1,
+section.hero h2 {
+    text-align: center;
+    margin: 0;
+}
+
+section.hero h1 {
+    color: #fff;
+    font-size: 4.2em;
+    margin-bottom: 20px;
+}
+
+section.hero h2 {
+    color: #4d5791;
+}
+
+.container {
+    padding: 40px;
+    width: 100%;
+}
+
+.page-area {
+    max-width: 768px;
+    display: inline-block;
+}
+
+.bottom {
+    height: 50px;
+    background-color: #b4c6f0;
+    padding: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+.container article.text-box {
+    display: inline-block;
+    width: 100%;
+    max-width: 340px;
+    text-align: justify;
+    margin: 20px;
+    vertical-align: top;
+}
+
+article.text-box p {
+    font-size: 1.2em;
+}
+
+/* d3js chart */
+svg {
+    overflow: visible;
+}
+
+path.slice {
+	stroke-width:2px;
+}
+
+polyline {
+	opacity: .3;
+	stroke: black;
+	stroke-width: 2px;
+	fill: none;
+}
+
+@media screen and (min-width: 768px) {
+    .container .article.text-box {
+        margin: 10px;
+    }
+}

@@ -1,0 +1,79 @@
+
+<div class="month-selector">
+  <label for="month-selector">Select month:</label>
+  <select name="month-selector" id="month-selector">
+    <option value='0'>Janaury</option>
+    <option value='1'>February</option>
+    <option value='2'>March</option>
+    <option value='3'>April</option>
+    <option value='4'>May</option>
+    <option value='5'>June</option>
+    <option value='6'>July</option>
+    <option value='7'>August</option>
+    <option value='8'>September</option>
+    <option value='9'>October</option>
+    <option value='10'>November</option>
+    <option selected value='11'>December</option>
+  </select>
+  <button id="month-select-submit" (click)="loadChartsForMonth()">Submit</button>
+  <p class="log"></p>
+</div>
+
+<div style="display: none;" class="chartsContainer">
+  <div class="expensesPi">
+    <p>Expense Pie Chart</p>
+    <canvas id="expensePieChart" width="500" height="500"></canvas>
+  </div>
+  <div class="budgetPi">
+    <p>Budget Pie Chart</p>
+    <canvas id="budgetPieChart" width="500" height="500"></canvas>
+  </div>
+  <div class="expensesBudgetBar">
+    <canvas id="expenseBudgetBarChart" width="1200" height="500"></canvas>
+  </div>
+</div>
+
+<div class="manager-container">
+
+  <p>Configure your budget and expenses for the month</p>
+  <p class="budget-operation-error"></p>
+  <div class="form">
+
+    <div>
+      <label for="budget-action">Select action:</label>
+      <select name="budget-action" id="budget-action">
+        <option value="add">Add category</option>
+        <option value="update">Update category</option>
+        <option value="delete">Delete category</option>
+      </select>
+    </div>
+
+    <div style="display:none" class="budget-title">
+      <label for="budget-title">Select a budget item:</label>
+      <select name="budget-title" id="budget-title">
+      </select>
+    </div>
+
+    <div class="new-title">
+      <label for="new-title">Enter new budget item name:</label>
+      <input name="new-title" type="text" id="new-title">
+    </div>
+
+    <div class="expense-amount-input">
+      <label for="target-expense">Enter target budget ($):</label>
+      <input name="target-expense" type="number" id="target-expense-amount">
+    </div>
+
+    <div class="budget-amount-input">
+      <label for="actual-expense">Enter actual expense ($):</label>
+      <input name="actual-expense" type="number" id="actual-expense-amount">
+    </div>
+
+    <div>
+      <button id="budget-mod-submit" (click)="userBudgetModification()">Submit</button>
+    </div>
+
+  </div>
+
+
+</div>

@@ -1,0 +1,8 @@
+<nav class="menu">
+  <ul>
+      <li><a [routerLink]="['/']">Home</a></li>
+      <li id="dashboard" style="display: none;"><a [routerLink]="['/dashboard']">Dashboard</a></li>
+      <li id="login"><a (click)="login()">Sign in</a></li>
+      <li id="logout" style="display: none;"><a (click)="logout()">Sign out</a></li>
+  </ul>
+</nav>

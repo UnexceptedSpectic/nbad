@@ -1,0 +1,75 @@
+.expensesPi, .budgetPi, .expensesBudgetBar {
+  margin: auto;
+}
+
+.chartsContainer{
+  display: grid;
+  grid-gap: 100px;
+  margin: 100px;
+}
+
+.chartsContainer p {
+  text-align: center;
+  font-size: 22px;
+}
+
+.expensesPi {
+  grid-column: 1 / 2;
+}
+
+.budgetPi {
+  grid-column: 2 / 3;
+}
+
+.expensesBudgetBar {
+  grid-column: 1 / 3;
+}
+
+button {
+  margin: 10px 10px 10px 10px;
+  font-size: 16px;
+}
+
+div.month-selector {
+  text-align: center;
+  font-size: 16px;
+  margin: 50px;
+}
+
+div.month-selector select {
+  margin: 0 20px;
+}
+
+.manager-container {
+  font-size: 16px;
+  margin: 50px;
+}
+
+.manager-container p {
+  text-align: center;
+  font-size: 18px;
+  margin: 50px;
+}
+
+.manager-container p.budget-operation-error {
+  font-size: 16px;
+  color: red;
+}
+
+div.form {
+  display: -webkit-box;
+  width: 75vw;
+  margin: auto;
+}
+
+div.form div {
+  margin: 15px;
+}
+
+div.form div button {
+  margin: 0;
+}
+
+div.form label {
+  margin-right: 10px;
+}
